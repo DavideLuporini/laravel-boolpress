@@ -1909,7 +1909,7 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue */ "./resources/js/components/Header.vue");
-/* harmony import */ var _posts_PostList_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./posts/PostList.vue */ "./resources/js/components/posts/PostList.vue");
+/* harmony import */ var _posts_PostList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./posts/PostList */ "./resources/js/components/posts/PostList.vue");
 //
 //
 //
@@ -1921,9 +1921,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
-  Components: {
+  components: {
     Header: _Header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    PostList: _posts_PostList_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    PostList: _posts_PostList__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -1938,8 +1938,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -1969,8 +1967,32 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "PostList"
+  name: "PostList",
+  data: function data() {
+    return {
+      posts: []
+    };
+  },
+  methods: {
+    getPosts: function getPosts() {
+      var _this = this;
+
+      axios.get("http://localhost:8000/api/posts").then(function (res) {
+        _this.posts = res.data;
+      })["catch"](function (err) {
+        console.error(err);
+      }).then(console.log("terminated call"));
+    }
+  },
+  mounted: function mounted() {
+    this.getPosts();
+  }
 });
 
 /***/ }),
@@ -37604,10 +37626,6 @@ var staticRenderFns = [
             _c("div", { staticClass: "card-header" }, [
               _c("h1", [_vm._v("Welcome")]),
             ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("h3", [_vm._v("Work in progress")]),
-            ]),
           ]),
         ]),
       ]),
@@ -37635,7 +37653,17 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      _vm._v("\n    PostList Test\n    "),
+      _vm._l(_vm.posts, function (post) {
+        return _c("li", { key: post.id }, [_vm._v(_vm._s(post.title))])
+      }),
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -50120,6 +50148,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 var root = new Vue({
   el: '#root',

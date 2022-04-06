@@ -7,11 +7,11 @@
 
 <script>
 import Header from "./Header.vue";
-import PostList from "./posts/PostList.vue";
+import PostList from "./posts/PostList";
 
 export default {
   name: "App",
-  Components: {
+  components: {
     Header,
     PostList,
   },
