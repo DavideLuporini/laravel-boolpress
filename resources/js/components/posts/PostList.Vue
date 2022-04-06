@@ -1,11 +1,4 @@
-<template>
-  <section class="post-list">
-    <h1>Posts</h1>
-    <ul>
-      <li>post</li>
-    </ul>
-  </section>
-</template>
+<template></template>
 
 <script>
 export default {

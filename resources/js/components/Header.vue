@@ -13,5 +13,7 @@
 </template>
 
 <script>
-name: "App";
+export default {
+  name: "Header",
+};
 </script>

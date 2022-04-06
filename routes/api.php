@@ -18,11 +18,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/test', 'Api\PostController@index', function () {
-    $names = ['Nico', 'Pietro', 'Antonio'];
+//trial api
+// Route::get('/test', 'Api\PostController@index', function () {
+//     $names = ['Nico', 'Pietro', 'Antonio'];
 
-    return response()->json(['names' => $names]);
-});
+//     return response()->json(['names' => $names]);
+// });
 
 Route::namespace('Api')->group(function () {
 
