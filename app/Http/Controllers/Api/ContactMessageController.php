@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\mail\ContactMessageMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactMessageController extends Controller
 {
@@ -11,6 +13,9 @@ class ContactMessageController extends Controller
     {
         $data = $request->all();
 
-        return response()->json($data);
+        $mail = new ContactMessageMail($data);
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send($mail);
+
+        return response('mail sent', 204);
     }
 }

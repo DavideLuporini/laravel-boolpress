@@ -1,5 +1,6 @@
 @component('mail::message')
 # New message
+
 <p>Email{{ $contact['email']}}</p>
 
 The body of your message.
