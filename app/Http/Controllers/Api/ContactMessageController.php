@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\mail\ContactMessageMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 class ContactMessageController extends Controller
 {
@@ -13,8 +14,18 @@ class ContactMessageController extends Controller
     {
         $data = $request->all();
 
+        #VALIDATION
+        $validator = Validator::make($data, [
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()]);
+        };
+
         $mail = new ContactMessageMail($data);
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send($mail);
+        Mail::to(env('MAIL_ADMIN_ADDRESS'))->send($mail);
 
         return response('mail sent', 204);
     }
