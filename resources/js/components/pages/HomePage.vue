@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
+    <div>
         <PostList />
     </div>
 </template>
 
 <script>
-import PostList from "./PostList.vue";
+import PostList from "../posts/PostList.vue";
 export default {
     name: "HomePage",
     components: {
@@ -13,3 +13,5 @@ export default {
     },
 };
 </script>
+
+<style></style>
