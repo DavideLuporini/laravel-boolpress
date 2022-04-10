@@ -1953,8 +1953,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Header"
 });
@@ -2032,7 +2030,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "PostDetail",
-  props: ["post"],
   components: {
     Loader: _microcomponents_Loader_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     PostCard: _posts_PostCard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -2073,21 +2070,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -38503,11 +38485,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row justify-content-center" }, [
         _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _c("h1", [_vm._v("Welcome")]),
-            ]),
-          ]),
+          _c("div", { staticClass: "card" }),
         ]),
       ]),
     ])
@@ -38636,33 +38614,9 @@ var render = function () {
       _c("div", { staticClass: "row g-0" }, [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card-body" }, [
-            _c(
-              "div",
-              { staticClass: "d-flex justify-content-end align-items-center" },
-              [
-                !_vm.hideLink
-                  ? _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-sm btn-primary text-white p-2",
-                        attrs: {
-                          role: "button",
-                          to: {
-                            name: "post-detail",
-                            params: { id: _vm.post.id },
-                          },
-                        },
-                      },
-                      [
-                        _vm._v(
-                          "\n                            more\n                        "
-                        ),
-                      ]
-                    )
-                  : _vm._e(),
-              ],
-              1
-            ),
+            _c("div", {
+              staticClass: "d-flex justify-content-end align-items-center",
+            }),
             _vm._v(" "),
             _c("h5", { staticClass: "card-title" }, [
               _vm._v(_vm._s(_vm.post.title)),
@@ -38696,28 +38650,20 @@ var render = function () {
                 "card-footer d-flex justify-content-between align-items-center",
             },
             [
-              _c(
-                "span",
-                { class: "badge badge-pill badge-" + _vm.post.category.color },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(_vm.post.category.label) +
-                      "\n                    "
-                  ),
-                ]
-              ),
+              _c("span", [
+                _vm._v(
+                  "\n                        " +
+                    _vm._s(_vm.post.category.label) +
+                    "\n                    "
+                ),
+              ]),
               _vm._v(" "),
               _c(
                 "div",
                 _vm._l(_vm.post.tags, function (tag) {
                   return _c(
                     "span",
-                    {
-                      key: tag.id,
-                      staticClass: "badge mr-2",
-                      style: "background-color:" + tag.color,
-                    },
+                    { key: tag.id, staticClass: "badge mr-2" },
                     [
                       _vm._v(
                         "\n                            " +

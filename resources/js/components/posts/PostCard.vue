@@ -6,19 +6,7 @@
                     <div class="card-body">
                         <div
                             class="d-flex justify-content-end align-items-center"
-                        >
-                            <router-link
-                                v-if="!hideLink"
-                                class="btn btn-sm btn-primary text-white p-2"
-                                role="button"
-                                :to="{
-                                    name: 'post-detail',
-                                    params: { id: post.id },
-                                }"
-                            >
-                                more
-                            </router-link>
-                        </div>
+                        ></div>
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text">
                             {{ post.content }}
@@ -34,9 +22,7 @@
                     <div
                         class="card-footer d-flex justify-content-between align-items-center"
                     >
-                        <span
-                            :class="`badge badge-pill badge-${post.category.color}`"
-                        >
+                        <span>
                             {{ post.category.label }}
                         </span>
                         <div>
@@ -44,7 +30,6 @@
                                 v-for="tag in post.tags"
                                 :key="tag.id"
                                 class="badge mr-2"
-                                :style="`background-color:${tag.color}`"
                             >
                                 {{ tag.label }}
                             </span>

@@ -10,7 +10,6 @@ import Loader from "../microcomponents/Loader.vue";
 import PostCard from "../posts/PostCard.vue";
 export default {
     name: "PostDetail",
-    props: ["post"],
     components: {
         Loader,
         PostCard,
