@@ -27,6 +27,6 @@ class ContactMessageController extends Controller
         $mail = new ContactMessageMail($data);
         Mail::to(env('MAIL_ADMIN_ADDRESS'))->send($mail);
 
-        return response('mail sent', 204);
+        return response('Mail sent', 204);
     }
 }
