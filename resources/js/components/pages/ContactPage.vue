@@ -1,7 +1,7 @@
 <template>
     <section>
         <h1>Contact us</h1>
-        <!-- <Loader v-if="isLoading" /> -->
+        <Loader v-if="isLoading" />
         <form>
             <!-- input email -->
             <div class="form-group">
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-// import Loader from '../microcomponents/Loader.vue'
+import Loader from '../microcomponents/Loader.vue'
 export default {
     name: "ContactPage",
     components:{
-        // Loader,
+        Loader,
     },
     data() {
         return {
