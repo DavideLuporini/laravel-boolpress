@@ -1911,6 +1911,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue */ "./resources/js/components/Header.vue");
 /* harmony import */ var _posts_PostList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./posts/PostList */ "./resources/js/components/posts/PostList.vue");
 /* harmony import */ var _microcomponents_Loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./microcomponents/Loader */ "./resources/js/components/microcomponents/Loader.vue");
+/* harmony import */ var _microcomponents_Ex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./microcomponents/Ex */ "./resources/js/components/microcomponents/Ex.vue");
 //
 //
 //
@@ -1920,6 +1921,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 
@@ -1928,7 +1930,8 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Header: _Header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     PostList: _posts_PostList__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Loader: _microcomponents_Loader__WEBPACK_IMPORTED_MODULE_2__["default"]
+    Loader: _microcomponents_Loader__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Ex: _microcomponents_Ex__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
 
@@ -1987,9 +1990,76 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/ContactPage.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\david\\Desktop\\laravel-boolpress\\resources\\js\\components\\pages\\ContactPage.vue: Missing semicolon. (46:82)\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     methods\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m         sendForm() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m             axios\u001b[33m.\u001b[39mpost(\u001b[32m\"http://localhost::8000/api/messages\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mform)\u001b[33m.\u001b[39mthen(res) \u001b[33m=>\u001b[39m {\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mform\u001b[33m.\u001b[39memail \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mform\u001b[33m.\u001b[39mmessage \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m})\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m((err) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m             })\u001b[33m.\u001b[39mthen(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n    at instantiate (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:72:32)\n    at constructor (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:358:12)\n    at Parser.raise (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3334:19)\n    at Parser.semicolon (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3995:10)\n    at Parser.parseExpressionStatement (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:15125:10)\n    at Parser.parseStatementContent (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14676:19)\n    at Parser.parseStatement (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14528:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:15167:25)\n    at Parser.parseBlockBody (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:15158:10)\n    at Parser.parseBlock (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:15142:10)\n    at Parser.parseFunctionBody (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13836:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13820:10)\n    at Parser.parseMethod (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13770:10)\n    at Parser.parseObjectMethod (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13646:19)\n    at Parser.parseObjPropValue (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13687:23)\n    at Parser.parsePropertyDefinition (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13604:10)\n    at Parser.parseObjectLike (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13494:21)\n    at Parser.parseExprAtom (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12889:23)\n    at Parser.parseExprSubscripts (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12539:23)\n    at Parser.parseUpdate (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12518:21)\n    at Parser.parseMaybeUnary (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12489:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12283:61)\n    at Parser.parseExprOps (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12290:23)\n    at Parser.parseMaybeConditional (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12260:23)\n    at Parser.parseMaybeAssign (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12213:21)\n    at C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12171:39\n    at Parser.allowInAnd (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14237:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12171:17)\n    at Parser.parseObjectProperty (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13654:101)\n    at Parser.parseObjPropValue (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13687:100)\n    at Parser.parsePropertyDefinition (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13604:10)\n    at Parser.parseObjectLike (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13494:21)\n    at Parser.parseExprAtom (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12889:23)\n    at Parser.parseExprSubscripts (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12539:23)\n    at Parser.parseUpdate (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12518:21)\n    at Parser.parseMaybeUnary (C:\\Users\\david\\Desktop\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12489:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// import Loader from '../microcomponents/Loader.vue'
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ContactPage",
+  components: {// Loader,
+  },
+  data: function data() {
+    return {
+      form: {
+        email: "",
+        message: ""
+      }
+    };
+  },
+  methods: {
+    sendForm: function sendForm() {
+      var _this = this;
+
+      axios.post("http://localhost:8000/api/messages", this.form).then(function () {
+        _this.form.email = '';
+        _this.form.message = '';
+      })["catch"](function () {
+        _this.errors = {
+          error: 'an error has occured'
+        };
+      }).then(function () {});
+    }
+  }
+});
 
 /***/ }),
 
@@ -2155,6 +2225,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microcomponents_Loader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../microcomponents/Loader.vue */ "./resources/js/components/microcomponents/Loader.vue");
+//
+//
+//
 //
 //
 //
@@ -38508,6 +38581,30 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/microcomponents/Loader.vue?vue&type=template&id=151b41da&scoped=true&":
 /*!*************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/microcomponents/Loader.vue?vue&type=template&id=151b41da&scoped=true& ***!
@@ -38566,77 +38663,76 @@ var render = function () {
   return _c("section", [
     _c("h1", [_vm._v("Contact us")]),
     _vm._v(" "),
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "email" } }, [_vm._v("Email address")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.email,
-            expression: "form.email",
-          },
-        ],
-        staticClass: "form-control",
-        attrs: { type: "email", id: "email" },
-        domProps: { value: _vm.form.email },
-        on: {
-          input: function ($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "email", $event.target.value)
-          },
-        },
-      }),
-      _vm._v(" "),
-      _c(
-        "small",
-        { staticClass: "form-text text-muted", attrs: { id: "emailHelp" } },
-        [_vm._v("We'll never share your email with anyone else.")]
-      ),
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "message" } }, [_vm._v("message")]),
-      _vm._v(" "),
-      _c("textarea", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.message,
-            expression: "form.message",
-          },
-        ],
-        staticClass: "form-control",
-        attrs: { id: "message", rows: "20" },
-        domProps: { value: _vm.form.message },
-        on: {
-          input: function ($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "message", $event.target.value)
-          },
-        },
-      }),
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "d-flex justify-content-end" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-sm btn-primary",
+    _c("form", [
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "email" } }, [_vm._v("Email address")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.email,
+              expression: "form.email",
+            },
+          ],
+          staticClass: "form-control",
+          attrs: { type: "email", id: "email" },
+          domProps: { value: _vm.form.email },
           on: {
-            click: function ($event) {
-              return _vm.sendForm()
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "email", $event.target.value)
             },
           },
-        },
-        [_vm._v("\n            Send\n        ")]
-      ),
+        }),
+        _vm._v(" "),
+        _c(
+          "small",
+          { staticClass: "form-text text-muted", attrs: { id: "emailHelp" } },
+          [_vm._v("We'll never share your email with anyone else.")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "message" } }, [_vm._v("message")]),
+        _vm._v(" "),
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.message,
+              expression: "form.message",
+            },
+          ],
+          staticClass: "form-control",
+          attrs: { id: "message", rows: "20" },
+          domProps: { value: _vm.form.message },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "message", $event.target.value)
+            },
+          },
+        }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "d-flex justify-content-end" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-sm btn-primary",
+            attrs: { type: "button" },
+            on: { click: _vm.sendForm },
+          },
+          [_vm._v("\n                Send\n            ")]
+        ),
+      ]),
     ]),
   ])
 }
@@ -38820,6 +38916,10 @@ var render = function () {
     [
       _c("h2", [_vm._v("Posts")]),
       _vm._v(" "),
+      _c("router-link", { attrs: { to: { name: "contacts" } } }, [
+        _vm._v("\n                    contacts\n                "),
+      ]),
+      _vm._v(" "),
       _vm.isLoading
         ? _c("Loader")
         : _c("div", [
@@ -38885,8 +38985,6 @@ var render = function () {
                   0
                 )
               : _vm._e(),
-            _vm._v(" "),
-            _c("div"),
           ]),
     ],
     1
@@ -54458,6 +54556,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/microcomponents/Ex.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/microcomponents/Ex.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ex.vue?vue&type=template&id=770dc09a& */ "./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/microcomponents/Ex.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Ex.vue?vue&type=template&id=770dc09a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/microcomponents/Ex.vue?vue&type=template&id=770dc09a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Ex_vue_vue_type_template_id_770dc09a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/microcomponents/Loader.vue":
 /*!************************************************************!*\
   !*** ./resources/js/components/microcomponents/Loader.vue ***!
@@ -54946,7 +55097,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     component: _components_pages_HomePage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
     path: "/contacts",
-    component: _components_pages_ContactPage__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _components_pages_ContactPage__WEBPACK_IMPORTED_MODULE_3__["default"],
+    name: "contacts"
   }, {
     path: "/posts/:id",
     component: _components_pages_PostDetail__WEBPACK_IMPORTED_MODULE_4__["default"],

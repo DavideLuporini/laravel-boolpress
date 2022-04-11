@@ -1,8 +1,14 @@
 <template>
     <section id="post-list" class="my-3">
         <h2>Posts</h2>
+               <router-link
+                        :to="{ name: 'contacts', }"
+                    >
+                        contacts
+                    </router-link>
         <Loader v-if="isLoading" />
-
+ 
+        
         <div v-else>
             <div
                 class="alert alert-danger d-flex justify-content-between"
@@ -12,7 +18,6 @@
                 error
                 <span role="button" @click="hasError = !hasError">&times;</span>
             </div>
-
             <ul v-if="posts.length">
                 <li v-for="post in posts" :key="post.id">
                     {{ post.title }}
@@ -23,9 +28,7 @@
                     </router-link>
                 </li>
             </ul>
-            <div></div>
         </div>
-        <p v-else>no posts</p>
     </section>
 </template>
 

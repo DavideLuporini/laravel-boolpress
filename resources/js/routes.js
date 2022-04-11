@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 import HomePage from "./components/pages/HomePage";
 import ContactPage from "./components/pages/ContactPage";
 import PostDetail from "./components/pages/PostDetail";
+
 const router = new VueRouter({
     mode: "history",
     linkExactActiveClass: "active",
@@ -14,12 +15,13 @@ const router = new VueRouter({
         },
         {
             path: "/contacts",
-            component: ContactPage
+            component: ContactPage,
+            name: "contacts",
         },
         {
             path: "/posts/:id",
             component: PostDetail,
-            name: "post-detail"
+            name: "post-detail",
         },
     ],
 });

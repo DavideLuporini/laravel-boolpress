@@ -11,6 +11,7 @@
 import Header from "./Header.vue";
 import PostList from "./posts/PostList";
 import Loader from "./microcomponents/Loader";
+import Ex from "./microcomponents/Ex";
 
 export default {
     name: "App",
@@ -18,6 +19,7 @@ export default {
         Header,
         PostList,
         Loader,
+        Ex,
     },
 };
 </script>
